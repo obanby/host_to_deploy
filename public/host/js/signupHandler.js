@@ -1,4 +1,4 @@
-const HOST_API = "http://localhost:3000/v1/host"
+const HOST_API = "http://54.159.144.142:3000/v1/host"
 
 function host_signup() {
   post(`${HOST_API}/signup`, {
@@ -12,7 +12,7 @@ function host_signup() {
   .then(response => {
     console.log(response);
     if (response.data !== null) {
-      window.location.href = `http://localhost:3000/host/hostlogin.html`
+      window.location.href = `http://54.159.144.142:3000/host/hostlogin.html`
     }
   })
   .catch(err => {

@@ -1,4 +1,4 @@
-const HOST_API = "http://localhost:3000/v1/host"
+const HOST_API = "http://54.159.144.142:3000/v1/host"
 
 window.onload = function() {
   let user = JSON.parse(localStorage.getItem("host"));
@@ -62,7 +62,7 @@ function updateProfile() {
         let ls =  JSON.parse(localStorage.getItem("host"));
         ls.host = response.data;
         localStorage.setItem("host", JSON.stringify(ls));
-        window.location.href = `http://localhost:3000/host/profile.html`
+        window.location.href = `http://54.159.144.142:3000/host/profile.html`
         return;
     }
     window.alert("Please fill all the fields");

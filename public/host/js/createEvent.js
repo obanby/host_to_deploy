@@ -1,4 +1,4 @@
-const Event_API = "http://localhost:3000/v1/event"
+const Event_API = "http://54.159.144.142:3000/v1/event"
 
 function postEvent() {
   let name = document.getElementById("name").value;
@@ -39,7 +39,7 @@ function postEvent() {
       }
 
       localStorage.setItem("host", JSON.stringify(ls));
-      window.location.href = "http://localhost:3000/host/profile.html";
+      window.location.href = "http://54.159.144.142:3000/v1/host/profile.html";
     })
     .catch(err => {
       console.log(err)

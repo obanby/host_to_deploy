@@ -1,4 +1,4 @@
-const HOST_API = "http://localhost:3000/v1/host"
+const HOST_API = "http://54.159.144.142:3000/v1/host"
 
 function host_login() {
   post(`${HOST_API}/login`, {
@@ -9,7 +9,7 @@ function host_login() {
     if (response.data !== null) {
       localStorage.setItem('host', JSON.stringify(response.data) );
       // TODO: make sure to change that to the correct end point
-      window.location.href = `http://localhost:3000/host/profile.html`
+      window.location.href = `http://54.159.144.142:3000/host/profile.html`
     }
   })
   .catch(err => {
