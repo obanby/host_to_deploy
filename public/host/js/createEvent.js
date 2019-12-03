@@ -39,7 +39,7 @@ function postEvent() {
       }
 
       localStorage.setItem("host", JSON.stringify(ls));
-      window.location.href = "http://54.159.144.142:3000/v1/host/profile.html";
+      window.location.href = "http://54.159.144.142:3000/host/profile.html";
     })
     .catch(err => {
       console.log(err)

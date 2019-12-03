@@ -99,11 +99,11 @@ touristLoginForm.onsubmit = async function(event) {
   var obj = ({ email: email, password:password});
   //var data = JSON.stringify(obj);
   try {
-    const res = await postData('http://localhost:3000/v1/tourist/login', obj );
+    const res = await postData('http://54.159.144.142:3000/v1/tourist/login', obj );
     if(res.error == null){
       M.toast({html: 'Login Successful!', classes: 'green'})
       localStorage.setItem('user', JSON.stringify(res.data.tourist));
-      window.location.href = "http://localhost:3000/tourist/TouristProfilePage.html";
+      window.location.href = "http://54.159.144.142:3000/tourist/TouristProfilePage.html";
     }else{
       M.toast({html: 'Login Failed!', classes: 'red'})
     }
@@ -122,7 +122,7 @@ touristSignUpForm.onsubmit = async function(event) {
   const password = touristSignUpForm.elements['password'].value;
   var obj = ({ email: email, password:password});
   try {
-    const res = await postData('http://localhost:3000/v1/tourist/signup', obj );
+    const res = await postData('http://54.159.144.142:3000/v1/tourist/signup', obj );
     if(res.error == null){
       M.toast({html: 'Signup Successful!', classes: 'green'})
     }else{

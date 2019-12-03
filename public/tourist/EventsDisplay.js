@@ -4,7 +4,7 @@ window.onload = async function () {
   const events = document.getElementById('events');
   console.log(user);
   try {
-    const res = await getData('http://localhost:3000/v1/event');
+    const res = await getData('http://54.159.144.142:3000/v1/event');
     if (res.error == null) {
       //M.toast({ html: 'Successful!', classes: 'green' })
       console.log(res);
@@ -38,11 +38,11 @@ window.onload = async function () {
 
           //var data = JSON.stringify(obj);
           try {
-            const res = await postData('http://localhost:3000/v1/tourist/joinEvent', obj);
+            const res = await postData('http://54.159.144.142:3000/v1/tourist/joinEvent', obj);
             console.log(res);
             if(res.error == null){
               //M.toast({html: 'Success!', classes: 'green'})
-              window.location.href = "http://localhost:3000/tourist/TouristProfilePage.html";
+              window.location.href = "http://54.159.144.142:3000/tourist/TouristProfilePage.html";
             }else{
               //M.toast({html: 'Failed!', classes: 'red'})
             }

@@ -16,7 +16,7 @@ window.onload = async function(){
 
   //var data = JSON.stringify(obj);
   try {
-    const res = await postData('http://localhost:3000/v1/tourist/joinedEvents', obj);
+    const res = await postData('http://54.159.144.142:3000/v1/tourist/joinedEvents', obj);
     this.addEvents(res)
     
   } catch (error) {
@@ -57,11 +57,11 @@ function addEvents(res){
 
       //var data = JSON.stringify(obj);
       try {
-        const res = await postData('http://localhost:3000/v1/tourist/leaveEvent', obj);
+        const res = await postData('http://54.159.144.142:3000/v1/tourist/leaveEvent', obj);
         console.log(res);
         if(res.error == null){
           //M.toast({html: 'Success!', classes: 'green'})
-          window.location.href = "http://localhost:3000/tourist/TouristProfilePage.html";
+          window.location.href = "http://54.159.144.142:3000/tourist/TouristProfilePage.html";
         }else{
           //M.toast({html: 'Failed!', classes: 'red'})
         }

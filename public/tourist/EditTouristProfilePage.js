@@ -22,12 +22,12 @@ if(EditTouristProfilePageForm){
   var obj = ({ name: name, age: age,bio: bio,phone: phone,_id:user._id});
   //var data = JSON.stringify(obj);
   try {
-    const res = await postData('http://localhost:3000/v1/tourist/editprofile', obj );
+    const res = await postData('http://54.159.144.142:3000/v1/tourist/editprofile', obj );
     console.log(res);
     if(res.error == null){
       M.toast({html: 'Edit Successful!', classes: 'green'})
       localStorage.setItem('user', JSON.stringify(res.data));
-      window.location.href = "http://localhost:3000/tourist/TouristProfilePage.html";
+      window.location.href = "http://54.159.144.142:3000/tourist/TouristProfilePage.html";
     }else{
       M.toast({html: 'Edit Failed!', classes: 'red'})
     }
