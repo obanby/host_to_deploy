@@ -12,7 +12,7 @@ function host_signup() {
   .then(response => {
     console.log(response);
     if (response.data !== null) {
-      window.location.href = `http://54.159.144.142:3000/host/hostlogin.html`
+      window.location.href = `http://54.159.144.142:3000/host/hostLogin.html`
     }
   })
   .catch(err => {
