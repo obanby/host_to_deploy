@@ -1,0 +1,12 @@
+footer {
+  width: 100%;
+  min-height: 260px;
+}
+
+.artistImg {
+  padding: 5% 0% 17% 0%;
+}
+
+.unstyled_link {
+  text-decoration: none;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8" name="host" content="Travel, Tourism, Passion">
+  <title>Host.me</title>
+  <!-- Compiled and minified CSS and JS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Custom CSS and JS-->
+  <script src="./js/createEvent.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1> Create Event </h1>
+    <div class="row">
+      <form>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="name" type="text">
+            <label id="nameLbl" for="name">Event name</label>
+          </div>
+
+          <div class="input-field col s12">
+            <input id="description" type="text">
+            <label id="description" for="description">Description</label>
+          </div>
+
+          <div class="input-field col s12">
+            <input id="country" type="text">
+            <label id="countryLbl" for="country">Country</label>
+          </div>
+
+          <div class="input-field col s12">
+            <input id="city" type="text">
+            <label id="cityLbl" for="city">City</label>
+          </div>
+
+          <div class="input-field col s12">
+            <input id="price" type="number" min="0">
+            <label id="priceLbl" for="price">price</label>
+          </div>
+
+          <div class="input-field col s12">
+            <input id="startDate" type="date">
+            <label id="startDate" for="startDate">Start date</label>
+          </div>
+
+          <div class="input-field col s12">
+            <input id="endDate" type="date">
+            <label id="endDate" for="endDate">End date</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <button type="button" name="submit" class='col s12 btn btn-large waves-effect indigo' onclick="postEvent()">Post</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

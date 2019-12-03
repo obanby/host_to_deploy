@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8" name="host" content="Travel, Tourism, Passion">
+  <title>Host.me</title>
+  <!-- Compiled and minified CSS and JS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Custom CSS and JS-->
+  <link rel="stylesheet" href="./css/hostProfile.css">
+  <script src="./js/profile.js" defer></script>
+</head>
+
+<body class="blue-grey lighten-5">
+  <div class="container">
+    <div class="row">
+      <!-- Card that has the user Name Email and contact info -->
+      <div class="col s12 m6 l4">
+        <div class="card profile_card">
+          <div class="card-content">
+            <img  class="artistImg center" src="./assets/avatar.png">
+            <p class="center" id="username"> User name </p>
+
+            <div class="divider"></div>
+
+            <p class="center"> <i>Contact Info</i> </p>
+            <p class="center" id="email"> email: </p>
+            <p class="center" id="phone"> phone: </p>
+            <a href="./editProfile.html"> Edit profile </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6 l6 infoSection">
+        <p id="bio"></p>
+
+        <div class="divider"></div>
+
+        <p class="hostInfo" id="country"> Country: </p>
+        <p class="hostInfo" id="city"> City: </p>
+        <p class="hostInfo" id="country"> Language: English </p>
+
+      </div>
+    </div>
+
+    <div class="row listing">
+      <h2> Listing </h2> <a href="./createEvent.html"> Host an Event </a>
+      <div id="eventListing">
+          <p> No Events created yet </p>
+       </div>
+    </div>
+  </div>
+</body>

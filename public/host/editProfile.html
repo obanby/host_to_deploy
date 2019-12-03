@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8" name="host" content="Travel, Tourism, Passion">
+  <title>Host.me</title>
+  <!-- Compiled and minified CSS and JS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Custom CSS and JS-->
+  <script src="./js/editProfile.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1> Edit profile </h1>
+
+    <form>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="bio" type="text">
+          <label id="bioLbl" for="bio">Bio</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input id="country" type="text">
+          <label id="countryLbl" for="country">Country</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input id="city" type="text">
+          <label id="cityLbl" for="city">City</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input id="language" type="text" placeholder="English, Arabic, French">
+          <label id="languageLbl" for="language">language</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input id="field" type="text">
+          <label for="field">field</label>
+        </div>
+
+      </div>
+      <div class="row">
+        <button type="button" name="submit" class='col s12 btn btn-large waves-effect indigo' onclick="updateProfile()">Save</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8" name="host" content="Travel, Tourism, Passion">
+  <title>Host.me</title>
+  <!-- Compiled and minified CSS and JS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Custom CSS and JS-->
+  <script src="./js/signupHandler.js" defer></script>
+</head>
+
+
+<body>
+  <div class="container">
+    <h1> Welcome to Host </h1>
+    <div class="row" s12 m16>
+      <center>
+
+        <div class="input-field col s12">
+          <input id="name" type="text">
+          <label for="name">name</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input id="password" type="password">
+          <label for="password">password</label>
+        </div>
+
+
+        <div class="input-field col s12">
+          <input id="age" type="number" min="18">
+          <label for="age">age</label>
+        </div>
+
+
+        <div class="input-field col s12">
+          <input id="bio" type="text">
+          <label for="bio">Bio</label>
+        </div>
+
+        <div class="input-field col s12">
+          <input id="phone" type="text">
+          <label for="phone">Phone</label>
+        </div>
+
+        <div class='row'>
+          <button name='signupBtn' class='col s12 btn btn-large waves-effect indigo' onclick="host_signup()">Signup</button>
+        </div>
+      </center>
+    </div>
+  </div>
+</body>
+
+</html>
